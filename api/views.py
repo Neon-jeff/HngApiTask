@@ -5,5 +5,6 @@ from django.http import JsonResponse
 def Api(request):
     return JsonResponse({"slackUsername":"Neon-jeff",
             "backend":True,
+            "age":"22",
             "bio":"Free thinker, Robotic enthusiast, Andrew Tate"
     },safe=False)
