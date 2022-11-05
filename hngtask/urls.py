@@ -16,10 +16,10 @@ Including another URLconf
 import imp
 from django.contrib import admin
 from django.urls import path
-from api.views import Api, Calculate
+from api.views import Api, Operation
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Api,name='home'),
-    path('calculate/',Calculate,name='calculate')
+    path('calculate/',Operation,name='calculate')
 ]
